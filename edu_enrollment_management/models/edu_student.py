@@ -2,6 +2,8 @@
 
 from odoo import fields, models, api
 
+from dateutil.relativedelta import relativedelta
+
 
 class EduStudent(models.Model):
     _name = 'edu.student'
@@ -13,15 +15,15 @@ class EduStudent(models.Model):
         'res.partner',
         string='Partner',
         required=True,
-        ondelete='cascade',
+        ondelete='cascade'
     )
     birthdate = fields.Date(
-        string='Birthdate',
+        string='Birthdate'
     )
     age = fields.Integer(
         string='Age',
         compute='_compute_age',
-        store=True,
+        store=True
     )
 
     @api.depends('birthdate')
@@ -33,9 +35,7 @@ class EduStudent(models.Model):
         for record in self:
             if record.birthdate:
                 today = fields.Date.today()
-                age = today.year - record.birthdate.year
-                if (today.month, today.day) < (record.birthdate.month, record.birthdate.day):
-                    age -= 1
+                age = relativedelta(today, record.birthdate).years
                 record.age = age
             else:
                 record.age = 0
