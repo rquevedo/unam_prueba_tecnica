@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View edu.course View Tree -->
+    <record id="view_edu_course_tree" model="ir.ui.view">
+        <field name="name">view.edu.course.tree</field>
+        <field name="model">edu.course</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="duration"/>
+                <field name="start_date"/>
+                <field name="max_students"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View edu.course form -->
+    <record id="view_edu_course_form" model="ir.ui.view">
+        <field name="name">view.edu.course.form</field>
+        <field name="model">edu.course</field>
+        <field name="arch" type="xml">
+            <form string="Course">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                            <field name="duration"/>
+                        </group>
+                        <group>
+                            <field name="max_students"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                        <page string="Teachers">
+                            <field name="teacher_ids">
+                                <tree string="Teachers">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Subjects">
+                            <field name="subject_ids">
+                                <tree string="Subjects">
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- View edu.course search -->
+    <record id="view_edu_course_search" model="ir.ui.view">
+        <field name="name">view.edu.course.search</field>
+        <field name="model">edu.course</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" domain="[]" context="{'group_by':'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action edu.course -->
+    <record id="action_edu_course" model="ir.actions.act_window">
+        <field name="name">Course</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">edu.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Course.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_edu_course" name="Courses" parent="edu_enrollment_management.edu_enrrollment_manager_root_menu"
+        action="action_edu_course"/>
+
+</odoo>

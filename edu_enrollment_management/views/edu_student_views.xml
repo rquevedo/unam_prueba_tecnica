@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View edu.student View Tree -->
+    <record id="view_edu_student_tree" model="ir.ui.view">
+        <field name="name">view.edu.student.tree</field>
+        <field name="model">edu.student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="birthdate"/>
+                <field name="age"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View edu.student form -->
+    <record id="view_edu_student_form" model="ir.ui.view">
+        <field name="name">view.edu.student.form</field>
+        <field name="model">edu.student</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id" readonly="1"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="birthdate"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- View edu.student search -->
+    <record id="view_edu_student_search" model="ir.ui.view">
+        <field name="name">view.edu.student.search</field>
+        <field name="model">edu.student</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <group expand="1" string="Group By">
+                    <filter string="Age" name="age" domain="[]" context="{'group_by':'age'}"/>
+                    <filter string="Birthdate" name="birthdate" domain="[]" context="{'group_by':'birthdate'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action edu.student -->
+    <record id="action_edu_student" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">edu.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Student.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_edu_student" name="Students" parent="edu_enrollment_management.edu_enrrollment_manager_config_menu"
+        action="action_edu_student"/>
+
+</odoo>

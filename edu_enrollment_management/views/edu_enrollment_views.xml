@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View edu.enrollment View Tree -->
+    <record id="view_edu_enrollment_tree" model="ir.ui.view">
+        <field name="name">view.edu.enrollment.tree</field>
+        <field name="model">edu.enrollment</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_id"/>
+                <field name="course_id"/>
+                <field name="enrollment_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- View edu.enrollment form -->
+    <record id="view_edu_enrollment_form" model="ir.ui.view">
+        <field name="name">view.edu.enrollment.form</field>
+        <field name="model">edu.enrollment</field>
+        <field name="arch" type="xml">
+            <form string="Enrollment">
+                <header>
+                    <button name="action_request" type="object" invisible="state != 'draft'" class="oe_highlight" string="Request" />
+                    <button name="action_confirm" type="object" invisible="state != 'pending'" class="oe_highlight" string="Confirm"
+                        groups="edu_enrollment_management.group_edu_coordinator,edu_enrollment_management.group_edu_admin"/>
+                    <button name="action_cancel" type="object" invisible="state != 'confirmed'" class="oe_highlight" string="Cancel"
+                    groups="edu_enrollment_management.group_edu_coordinator,edu_enrollment_management.group_edu_admin"/>
+                    <button name="action_draft" type="object" invisible="state != 'canceled'" class="oe_highlight" string="Back to draft"
+                    groups="edu_enrollment_management.group_edu_coordinator,edu_enrollment_management.group_edu_admin"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,pending,confirmed,canceled"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="student_id" readonly="state != 'draft'"/>
+                            <field name="enrollment_date" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="course_id" readonly="state != 'draft'"/>
+                        </group>
+                    </group>
+                </sheet>
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- View edu.enrollment search -->
+    <record id="view_edu_enrollment_search" model="ir.ui.view">
+        <field name="name">view.edu.enrollment.search</field>
+        <field name="model">edu.enrollment</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="student_id" />
+                <field name="course_id" />
+                <filter string="To review" name="to_review" domain="[('state','=', 'pending')]"/>
+                <separator/>
+                <group expand="1" string="Group By">
+                    <filter string="Student" name="student" domain="[]" context="{'group_by':'student_id'}"/>
+                    <filter string="Course" name="course" domain="[]" context="{'group_by':'course_id'}"/>
+                    <filter string="Date" name="date" domain="[]" context="{'group_by':'enrollment_date'}"/>
+                    <filter string="State" name="course" domain="[]" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action edu.enrollment -->
+    <record id="action_edu_enrollment" model="ir.actions.act_window">
+        <field name="name">Enrollment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">edu.enrollment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Enrollment.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_edu_enrollment" name="Enrollments" parent="edu_enrollment_management.edu_enrrollment_manager_root_menu"
+        action="action_edu_enrollment"/>
+
+</odoo>

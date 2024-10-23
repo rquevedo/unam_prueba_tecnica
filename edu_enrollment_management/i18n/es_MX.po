@@ -1,0 +1,718 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* edu_enrollment_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-22 19:54+0000\n"
+"PO-Revision-Date: 2024-10-22 19:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.report,print_report_name:edu_enrollment_management.report_edu_enrollment
+msgid "'%s' % object.name"
+msgstr "'%s' % object.name"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__active
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__active
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__activity_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__activity_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__activity_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__activity_exception_decoration
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de Excepción de Actividad"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__activity_state
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__activity_state
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__activity_state
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__activity_state
+msgid "Activity State"
+msgstr "Estado de Actividad."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__activity_type_icon
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__activity_type_icon
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__activity_type_icon
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__activity_type_icon
+msgid "Activity Type Icon"
+msgstr  "Ícono del Tipo de Actividad."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__type
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__type
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__age
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_student_search
+msgid "Age"
+msgstr "Edad"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_student__lang
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_teacher__lang
+msgid ""
+"All the emails and documents sent to this contact will be translated in this"
+" language."
+msgstr "Todos los correos electrónicos y documentos enviados a este contacto serán traducidos a este idioma."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__teacher_ids
+msgid "Assigned Teachers"
+msgstr "Profesores Asignados"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__message_attachment_count
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__message_attachment_count
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__message_attachment_count
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__message_attachment_count
+msgid "Attachment Count"
+msgstr "Cantidad de Adjuntos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__avatar_1920
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__avatar_1920
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__avatar_1024
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__avatar_1024
+msgid "Avatar 1024"
+msgstr "Avatar 1024"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__avatar_128
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__avatar_128
+msgid "Avatar 128"
+msgstr "Avatar 128"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__avatar_256
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__avatar_256
+msgid "Avatar 256"
+msgstr "Avatar 256"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__avatar_512
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__avatar_512
+msgid "Avatar 512"
+msgstr "Avatar 512"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_form
+msgid "Back to draft"
+msgstr "Volver a borrador"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__bank_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__bank_ids
+msgid "Banks"
+msgstr "Bancos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__barcode
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__barcode
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__birthdate
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_student_search
+msgid "Birthdate"
+msgstr "Fecha de nacimiento"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__is_blacklisted
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__is_blacklisted
+msgid "Blacklist"
+msgstr "Lista negra"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__message_bounce
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__message_bounce
+msgid "Bounce"
+msgstr "Rebote"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__can_image_1024_be_zoomed
+msgid "Can Image 1024 be zoomed"
+msgstr "¿Se puede hacer zoom en la imagen 1024?"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__purchase_ok
+msgid "Can be Purchased"
+msgstr "Se puede comprar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__sale_ok
+msgid "Can be Sold"
+msgstr "Se puede vender"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields.selection,name:edu_enrollment_management.selection__edu_enrollment__state__canceled
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__channel_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__channel_ids
+msgid "Channels"
+msgstr "Canales"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_student__is_company
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_teacher__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Marque si el contacto es una empresa, de lo contrario es una persona"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_student__employee
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_teacher__employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Marque esta casilla si este contacto es un empleado."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__city
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__color
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__color
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__color
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__commercial_partner_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entidad comercial"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__company_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__company_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__company_registry
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__company_registry
+msgid "Company ID"
+msgstr "ID de la Empresa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__company_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__company_name
+msgid "Company Name"
+msgstr "Nombre de la Empresa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__commercial_company_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__commercial_company_name
+msgid "Company Name Entity"
+msgstr "Nombre de la Entidad de la Empresa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__company_type
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__company_type
+msgid "Company Type"
+msgstr "Tipo de Empresa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__contact_address
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__contact_address
+msgid "Complete Address"
+msgstr "Dirección Completa"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__complete_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__complete_name
+msgid "Complete Name"
+msgstr "Nombre Completo"
+
+#. module: edu_enrollment_management
+#: model:ir.ui.menu,name:edu_enrollment_management.edu_enrrollment_manager_config_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields.selection,name:edu_enrollment_management.selection__edu_enrollment__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__child_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__child_ids
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: edu_enrollment_management
+#: model:res.groups,name:edu_enrollment_management.group_edu_coordinator
+msgid "Coordinator"
+msgstr "Coordinador"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__standard_price
+msgid "Cost"
+msgstr "Costo"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__cost_currency_id
+msgid "Cost Currency"
+msgstr "Moneda del Costo"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_student__message_bounce
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_teacher__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr "Contador del número de correos electrónicos rebotados para este contacto"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__country_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__country_code
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__country_code
+msgid "Country Code"
+msgstr "Código del País"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.act_window,name:edu_enrollment_management.action_edu_course
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__course_id
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.report_edu_enrollment_view
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_form
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+msgid "Course"
+msgstr "Curso"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_edu_course
+msgid "Course Record"
+msgstr "Registro de Curso"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__course_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__course_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_product_product__course_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_product_template__course_ids
+#: model:ir.ui.menu,name:edu_enrollment_management.menu_edu_course
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_form
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__create_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__create_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__create_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__create_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__create_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__create_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__create_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__create_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__credits
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_search
+msgid "Credits"
+msgstr "Créditos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__date
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+msgid "Date"
+msgstr "Fecha"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,help:edu_enrollment_management.field_edu_course__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Unidad de medida predeterminada utilizada para todas las operaciones de stock."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__description
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__description
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_form
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__display_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__display_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__display_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__display_name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__product_document_ids
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__product_document_count
+msgid "Documents Count"
+msgstr "Conteo de documentos"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields.selection,name:edu_enrollment_management.selection__edu_enrollment__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__duration
+msgid "Duration (hours)"
+msgstr "Duración (horas)"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_form
+#: model:ir.actions.act_window,name:edu_enrollment_management.action_edu_enrollment
+msgid "Enrollment"
+msgstr "Inscripción"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.act_window,name:edu_enrollment_management.action_edu_student
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_student_form
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__student_id
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.report_edu_enrollment_view
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+msgid "Student"
+msgstr "Estudiante"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.act_window,name:edu_enrollment_management.action_edu_subject
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_form
+msgid "Subject"
+msgstr "Materia"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.act_window,name:edu_enrollment_management.action_edu_teacher
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_teacher_form
+#: model:res.groups,name:edu_enrollment_management.group_edu_teacher
+msgid "Teacher"
+msgstr "Profesor"
+
+#. module: edu_enrollment_management
+#: model:res.groups,name:edu_enrollment_management.group_edu_admin
+msgid "Education Administrator"
+msgstr "Administrador"
+
+#. module: edu_enrollment_management
+#: model:ir.ui.menu,name:edu_enrollment_management.edu_enrrollment_manager_root_menu
+msgid "Educational Enrollment manager"
+msgstr "Administrador de Inscripciones"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__enrollment_date
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.report_edu_enrollment_view
+msgid "Enrollment Date"
+msgstr "Fecha de incripción"
+
+#. module: edu_enrollment_management
+#: model:ir.actions.report,name:edu_enrollment_management.report_edu_enrollment
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__enrollment_ids
+#: model:ir.ui.menu,name:edu_enrollment_management.menu_edu_enrollment
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.report_edu_enrollment_view
+msgid "Enrollments"
+msgstr "Inscripciones"
+
+#. module: edu_enrollment_management
+#: model:ir.module.category,name:edu_enrollment_management.module_category_edu_enrrollment_manager
+msgid "Enrrollment Manager"
+msgstr "Administrador de inscripciones"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__message_follower_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__message_follower_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__message_follower_ids
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_search
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_student_search
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_search
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_teacher_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: edu_enrollment_management
+#: model:ir.module.category,description:edu_enrollment_management.module_category_edu_enrrollment_manager
+msgid "Helps to handle enrrollment manager groups."
+msgstr "Permite manejar los grupos de administración de inscripciones."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__id
+msgid "ID"
+msgstr "ID"
+
+#. module: edu_enrollment_management
+#. odoo-python
+#: code:addons/edu_enrollment_management/models/product_template.py:0
+#, python-format
+msgid ""
+"In products associated with a course, the product type must be set to "
+"'Consumable'."
+msgstr "En productos que tengan asociado un Curso, el tipo debe ser 'Consumible'."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__write_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__write_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__write_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__write_uid
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__write_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__write_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__write_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__write_date
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__max_students
+msgid "Max Students"
+msgstr "Máxima cantidad de estudiantes"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__name
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__name
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_search
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_teacher_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_form
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_student_form
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_subject_form
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_teacher_form
+msgid "Name..."
+msgstr "Nombre..."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__comment
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__comment
+msgid "Notes"
+msgstr "Notas"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__partner_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__partner_id
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields.selection,name:edu_enrollment_management.selection__edu_enrollment__state__pending
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__phone
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_product_template
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__product_variant_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_form
+msgid "Request"
+msgstr "Solicitar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_enrollment__state
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__state_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__state_id
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+msgid "State"
+msgstr "Estado"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_edu_enrollment
+msgid "Student Enrollment"
+msgstr "Incripción del estudiante"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_edu_student
+msgid "Student Record"
+msgstr "Registro de estudiante"
+
+#. module: edu_enrollment_management
+#: model:ir.ui.menu,name:edu_enrollment_management.menu_edu_student
+msgid "Students"
+msgstr "Estudiantes"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_subject__name
+msgid "Subject Name"
+msgstr "Nombre de la materia"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_edu_subject
+msgid "Subject Record"
+msgstr "Registro para la materia"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__subject_ids
+#: model:ir.ui.menu,name:edu_enrollment_management.menu_edu_subject
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_form
+msgid "Subjects"
+msgstr "Materias"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__subject_ids
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_teacher_form
+msgid "Subjects Taught"
+msgstr "Materias impartidas"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__category_id
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__category_id
+msgid "Tags"
+msgstr "Tags"
+
+#. module: edu_enrollment_management
+#: model:ir.model,name:edu_enrollment_management.model_edu_teacher
+msgid "Teacher Record"
+msgstr "Registro para el profesor"
+
+#. module: edu_enrollment_management
+#: model:ir.ui.menu,name:edu_enrollment_management.menu_edu_teacher
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_course_form
+msgid "Teachers"
+msgstr "Profesores"
+
+#. module: edu_enrollment_management
+#. odoo-python
+#: code:addons/edu_enrollment_management/models/edu_enrollment.py:0
+#, python-format
+msgid "The course has reached the maximum number of students."
+msgstr "El curso ha alcanzado el número máximo de estudiantes."
+
+#. module: edu_enrollment_management
+#: model:ir.model.constraint,message:edu_enrollment_management.constraint_edu_enrollment_student_course_uniq
+msgid "The student and course must be unique !"
+msgstr "Sólo puede registrarse una vez cada estudiante en el mismo curso."
+
+#. module: edu_enrollment_management
+#: model_terms:ir.actions.act_window,help:edu_enrollment_management.action_edu_course
+msgid "There is no examples click here to add new Course."
+msgstr "No existen registros, haga clic para agregar un nuevo Curso."
+
+#. module: edu_enrollment_management
+#: model_terms:ir.actions.act_window,help:edu_enrollment_management.action_edu_student
+msgid "There is no examples click here to add new Student."
+msgstr "No existen registros, haga clic para agregar un nuevo Estudiante."
+
+#. module: edu_enrollment_management
+#: model_terms:ir.actions.act_window,help:edu_enrollment_management.action_edu_subject
+msgid "There is no examples click here to add new Subject."
+msgstr "No existen registros, haga clic para agregar una nueva Materia."
+
+#. module: edu_enrollment_management
+#: model_terms:ir.actions.act_window,help:edu_enrollment_management.action_edu_teacher
+msgid "There is no examples click here to add new Teacher."
+msgstr "No existen registros, haga clic para agregar un nuevo Profesor."
+
+#. module: edu_enrollment_management
+#: model_terms:ir.actions.act_window,help:edu_enrollment_management.action_edu_enrollment
+msgid "There is no examples click here to add new Enrollment."
+msgstr "No existen registros, haga clic para agregar una nueva Inscripción."
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_student__title
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_teacher__title
+msgid "Title"
+msgstr "Título"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.view_edu_enrollment_search
+msgid "To review"
+msgstr "Pendiente a revisar"
+
+#. module: edu_enrollment_management
+#: model:ir.model.fields,field_description:edu_enrollment_management.field_edu_course__type
+msgid "Type"
+msgstr "Typo"
+
+#. module: edu_enrollment_management
+#: model_terms:ir.ui.view,arch_db:edu_enrollment_management.report_edu_enrollment_view
+msgid "state"
+msgstr "estado"
