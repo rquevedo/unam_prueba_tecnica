@@ -22,18 +22,16 @@
             <form string="Student">
                 <sheet>
                     <div class="oe_title">
-                        <label for="name"/>
                         <h1>
                             <field name="name" placeholder="Name..."/>
                         </h1>
                     </div>
                     <group>
                         <group>
-                            <field name="partner_id" readonly="1"/>
-                            <field name="age"/>
+                            <field name="birthdate"/>
                         </group>
                         <group>
-                            <field name="birthdate"/>
+                            <field name="age"/>
                         </group>
                     </group>
                 </sheet>
