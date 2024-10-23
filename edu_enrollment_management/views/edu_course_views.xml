@@ -96,6 +96,6 @@
 
     <!-- Menu Item -->
     <menuitem id="menu_edu_course" name="Courses" parent="edu_enrollment_management.edu_enrrollment_manager_root_menu"
-        action="action_edu_course"/>
+        action="action_edu_course" sequence="10"/>
 
 </odoo>

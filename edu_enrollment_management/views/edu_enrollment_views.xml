@@ -88,6 +88,6 @@
 
     <!-- Menu Item -->
     <menuitem id="menu_edu_enrollment" name="Enrollments" parent="edu_enrollment_management.edu_enrrollment_manager_root_menu"
-        action="action_edu_enrollment"/>
+        action="action_edu_enrollment" sequence="20"/>
 
 </odoo>

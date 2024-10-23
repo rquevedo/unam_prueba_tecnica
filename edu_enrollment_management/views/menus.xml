@@ -5,13 +5,12 @@
         id="edu_enrrollment_manager_root_menu"
         name="Educational Enrollment manager"
         web_icon="edu_enrollment_management,static/description/icon.png"
-        sequence="10"
     />
     <!-- Config -->
     <menuitem
         id="edu_enrrollment_manager_config_menu"
         name="Configuration"
         parent="edu_enrollment_management.edu_enrrollment_manager_root_menu"
-        sequence="10"
+        sequence="30"
     />
 </odoo>
